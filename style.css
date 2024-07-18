@@ -1,0 +1,453 @@
+@media (orientation: landscape) {
+  * {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 100vh;
+    background: #090002;
+    font-family: sans-serif;
+  }
+  #header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    gap: 30%;
+    background-color: #454343;
+  }
+  #para {
+    display: flex;
+    gap: 100px;
+    margin-top: 70px;
+    margin-left: 10%;
+  }
+  img {
+     
+    width: 500px;
+    height: 450px;
+    border: #fff 5px solid;
+    border-radius: 50px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  p {
+    width: 50%;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(49, 48, 48);
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 7%;
+    line-height: 1.5;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+
+  .navbar {
+    color: white;
+    margin-top: 20px;
+    justify-content: center;
+    flex: 1;
+  }
+  ul {
+    list-style-type: none;
+    margin-left: 50 px;
+    padding: 0px;
+    overflow: hidden;
+  }
+
+  li a {
+    display: block;
+    color: rgb(253, 248, 248);
+    text-align: center;
+
+    text-decoration: none;
+  }
+
+  .link-group {
+    list-style: none;
+    display: flex;
+  }
+
+  .link a {
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px;
+    
+    margin: 0 20px;
+    transition: 0.5s;
+    font-size: 20px;
+  }
+
+  .link a:hover,
+  .link.active a {
+    opacity: 1;
+    background-color: white;
+    color: black;
+  }
+
+  @keyframes disco {
+    0% {
+      color: red;
+      text-shadow: 0 0 10 px red;
+    }
+    20% {
+      color: yellow;
+      text-shadow: 0 0 10 px yellow;
+    }
+    40% {
+      color: green;
+      text-shadow: 0 0 10 px green;
+    }
+    60% {
+      color: cyan;
+      text-shadow: 0 0 10 px cyan;
+    }
+    80% {
+      color: blue;
+      text-shadow: 0 0 10 px blue;
+    }
+    100% {
+      color: rgb(186, 4, 77);
+      text-shadow: 0 0 10 px magenta;
+    }
+  }
+
+  .disco {
+    margin-top: 70px;
+    animation: disco 1s linear infinite;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+  }
+
+  button {
+    margin-top: auto;
+    color: blue;
+  }
+
+  .logo-container {
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .logo-container::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    top: -17px;
+    left: -17px;
+  }
+
+  .logo {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(135deg, #ff4081, #81d4fa);
+    background-clip: url("mypic.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+
+  .logo::before {
+    content: "J";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transform: scale(1.1);
+  }
+
+  .about {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 80px;
+    margin-left: 20%;
+    color: #fff;
+    border: 2px solid #ff4081;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .about:hover {
+    background-color: #ff4081;
+    color: #f2edee;
+  }
+  .dots-navigation {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    margin: 10px 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+
+  .dot.active {
+    background-color: #ff4081;
+  }
+}
+/* Media query for portrait orientation */
+
+@media screen and (orientation: portrait) {
+  body {
+    background: #090002;
+    font-family: sans-serif;
+  }
+
+  img {
+    margin-top: 0px;
+    margin-left: 70px;
+    width: 200px;
+    height: 150px;
+  }
+
+  #header {
+    display: flex;
+  }
+  .hamburger {
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    flex-direction: column;
+    background: #090002;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  ul {
+    margin-left: 0;
+    padding: 5px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  li {
+    padding: 5px;
+  }
+  .link a {
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+  .link a:hover,
+  .link.active a {
+    opacity: 1;
+    background-color: white;
+    color: black;
+  }
+
+  .logo-container {
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    margin-left: 20px;
+    width: 25px;
+    height: 30px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .logo-container::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    top: -14px;
+    left: -14px;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(135deg, #ff4081, #81d4fa);
+    background-clip: url("mypic.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+
+  .logo::before {
+    content: "J";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transform: scale(1.1);
+  }
+  @keyframes disco {
+    0% {
+      color: red;
+      text-shadow: 0 0 10 px red;
+    }
+    20% {
+      color: yellow;
+      text-shadow: 0 0 10 px yellow;
+    }
+    40% {
+      color: green;
+      text-shadow: 0 0 10 px green;
+    }
+    60% {
+      color: cyan;
+      text-shadow: 0 0 10 px cyan;
+    }
+    80% {
+      color: blue;
+      text-shadow: 0 0 10 px blue;
+    }
+    100% {
+      color: rgb(186, 4, 77);
+      text-shadow: 0 0 10 px magenta;
+    }
+  }
+  .disco {
+    animation: disco 1s linear infinite;
+  }
+  section {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+
+    padding: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    line-height: 1.5;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(58, 58, 58);
+  }
+
+  .about {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 50px;
+    margin-left: 20%;
+    color: #fff;
+    border: 2px solid #ff4081;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .about:hover {
+    background-color: #ff4081;
+    color: #f2edee;
+  }
+
+  .dots-navigation {
+    position: fixed;
+    right: 50%;
+    bottom: 10px;
+    transform: translateX(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+
+  .dot.active {
+    background-color: #ff4081;
+  }
+}

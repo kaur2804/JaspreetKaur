@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Jaspreet Kaur | Web Developer
+    </title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="grp">
+        <div class="logo-container">
+            <div class="logo">J</div>
+        </div>
+        
+        <nav class="navbar">
+            <ul class="link-group">
+                <li class="link "><a href="index.html">Home</a></li>
+                <li class="link active"><a href="aboutMe.html">About Me</a></li>
+                <li class="link"><a href="project.html">Projects</a></li>
+                <li class="link"><a href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            
+    </div>
+    <h1 id="about"> About Me<br></h1>
+    <section class="grid-container">
+        <div class="grid-item">
+            <p id="para">
+                Hello! I'm Jaspreet Kaur, an enthusiastic entry-level web developer passionate about
+                creating user-friendly and dynamic websites.<br> <br>
+                Dedicated, punctual, problem solver, and well-organized individual. My attention to detail and
+                commitment to excellence ensure that every
+                project I will work on will be completed to the highest standards.
+                <br><br>With a solid foundation in web technologies
+                and a keen interest in learning and improving my skills, I am excited to embark on a career
+                in web development.<br><br>
+            </p>
+            <br>
+            <div id="para">
+                <h2>Education:</h2>
+                <p> Graduated with honors in Computer Programming Course from Sheridan College</p><br>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div id="Skills">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Angular </span>
+                    <div class="progress-bar">
+                        <div class="progress1"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>SQL</span>
+                    <div class="progress-bar">
+                        <div class="progress1"></div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <br><br>
+            <div id="para">
+                <p>Also have basic knowleadge about:</p>
+                <ul class="more">
+                    <li>React</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>UI/UX</li>
+                    <li>C++</li>
+                    <li>php</li>
+                    <li>AWS</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+    </section>
+
+
+
+    <div id="editors">
+        <h3 id="name">Editors I am Familiar With</h3>
+        <ul class="editors-list">
+            <li><img src="logo/vs.jpg" alt="VS Code" class="editor-icon">VS Code</li>
+            <li><img src="logo/NetBeans_Logo.png" alt="Netbeans" class="editor-icon">Netbeans</li>
+            <li><img src="logo/adobe-xd.jpg" alt="AdobeXD" class="editor-icon">AdobeXD</li>
+            <li><img src="logo/sql.jpeg" alt="sql" class="editor-icon">  SQL Developer</li>
+
+        </ul>
+    </div>
+
+    <div class="dots-navigation">
+        <a href="index.html" class="dot  "></a>
+        <a href="aboutMe.html" class="dot active"></a>
+        <a href="project.html" class="dot"></a>
+        <a href= "contact.html" class="dot"></a>
+    </div>
+</body>
+
+</html>
